@@ -1,3 +1,4 @@
+//Form for the posts of journal entries
 import React, { useState } from "react";
 
 function Posts() {

@@ -1,0 +1,22 @@
+{
+    "Posts": [
+        {
+            "id": 1,
+            "FirstName": "Dwayna",
+            "LastName": "Harris",
+            "Text": "Today was a hectic day. I'm so drained I'm just gonna go to sleep."
+        },
+        {
+            "id": 2,
+            "FirstName": "Dwayna",
+            "LastName": "Harris",
+            "Text": "Today was a better. I had so much fun! I'm so happy..."
+        },
+        {
+            "id": 3,
+            "FirstName": "Dwayna",
+            "LastName": "Harris",
+            "Text": "I've been craving chocolate all day today. I'm gonna go get some candy from the store. I'm gonna get fat off chocolate today :("
+        }
+    ]
+}

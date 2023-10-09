@@ -1,3 +1,4 @@
+//Title and Navigation section
 const Header = () => {
     return (
         <>

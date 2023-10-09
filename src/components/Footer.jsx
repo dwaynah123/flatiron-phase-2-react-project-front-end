@@ -1,3 +1,4 @@
+//sends code back to top when at the bottom of page
 const Footer = () => {
     return (
         <>
