@@ -3,9 +3,7 @@ const Footer = () => {
         <>
             <footer>
                 <nav>
-                    <ul>
-                        <li> <a href="#top"> Go to top </a> </li>
-                    </ul>
+                    <a href="#top"> Go to top </a>
                 </nav>
             </footer>
         </>
