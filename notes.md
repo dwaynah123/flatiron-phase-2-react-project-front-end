@@ -8,6 +8,9 @@ assignment: https://my.learn.co/courses/651/assignments/33022?module_item_id=834
 - [X] - single api using create-react-app
 - [X] - public api or db.json
 - [X] - 3 components
+        * Header
+        * Posts
+        * Footer
 - [ ] - 2 client side routes
 - [ ] - 30+ commits
 - [ ] - Use a json-server to create a RESTful API for your backend and make both a GET and a POST request to the json server. Use a 
