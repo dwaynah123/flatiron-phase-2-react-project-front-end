@@ -5,7 +5,6 @@ function Posts() {
   const [firstName, setFirstName] = useState("first name");
   const [lastName, setLastName] = useState("last name");
   const [text, setText] = useState("Dear diary...");
-  const [submittedData, setSubmittedData] = useState([]);
   const [dbjson, setData] = useState([]);
 
   const getData = async() => {
@@ -19,9 +18,9 @@ function Posts() {
   const renderedPosts = dbjson.map((info) => (
       <div key={info.id}>
         <br></br>
-        {info.firstName} {info.lastName} 
+        {info.FirstName} {info.LastName} 
         <br></br>
-        {info.text}
+        {info.Text}
       </div>
   ))
 
@@ -39,24 +38,24 @@ function Posts() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    const formData = { firstName: firstName, lastName: lastName, text: text};
-    const dataArray = [...submittedData, formData];
-    setSubmittedData(dataArray);
+    const formData = { FirstName: firstName, LastName: lastName, Text: text};
+    fetch('http://localhost:4000/Posts', {
+      method: 'POST',
+      body: JSON.stringify(formData),
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      }
+    })
+    .then((response) => response.json())
+    .then((info)=> {
+      const dataArray = [...dbjson, info];
+      setData(dataArray);
+    })
     setFirstName("");
     setLastName("");
     setText("");
   }
-
-  const listOfSubmissions = submittedData.map((data, index) => {
-    return (
-      <div key={index}>
-        <br></br>
-        {data.firstName} {data.lastName} 
-        <br></br>
-        {data.text}
-      </div>
-    );
-  });
 
   return (
     <div>
@@ -67,8 +66,7 @@ function Posts() {
         <input type="text" onChange={handleTextChange} value={text} />
         <button type="submit">Submit</button>
       </form>
-      {/* {renderedPosts} */}
-      {listOfSubmissions}
+      {renderedPosts}
     </div>
   );
 }

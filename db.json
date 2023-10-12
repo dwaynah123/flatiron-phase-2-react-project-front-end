@@ -1,22 +1,40 @@
 {
-    "Posts": [
-        {
-            "id": 1,
-            "FirstName": "Dwayna",
-            "LastName": "Harris",
-            "Text": "Today was a hectic day. I'm so drained I'm just gonna go to sleep."
-        },
-        {
-            "id": 2,
-            "FirstName": "Dwayna",
-            "LastName": "Harris",
-            "Text": "Today was a better. I had so much fun! I'm so happy..."
-        },
-        {
-            "id": 3,
-            "FirstName": "Dwayna",
-            "LastName": "Harris",
-            "Text": "I've been craving chocolate all day today. I'm gonna go get some candy from the store. I'm gonna get fat off chocolate today :("
-        }
-    ]
+  "Posts": [
+    {
+      "id": 1,
+      "FirstName": "Dwayna",
+      "LastName": "Harris",
+      "Text": "Today was a hectic day. I'm so drained I'm just gonna go to sleep."
+    },
+    {
+      "id": 2,
+      "FirstName": "Dwayna",
+      "LastName": "Harris",
+      "Text": "Today was a better. I had so much fun! I'm so happy..."
+    },
+    {
+      "id": 3,
+      "FirstName": "Dwayna",
+      "LastName": "Harris",
+      "Text": "I've been craving chocolate all day today. I'm gonna go get some candy from the store. I'm gonna get fat off chocolate today :("
+    },
+    {
+      "FirstName": "Dwayna",
+      "LastName": "Harris",
+      "Text": "Dear diary today was an okay day.",
+      "id": 4
+    },
+    {
+      "FirstName": "Dwayna",
+      "LastName": "Harris",
+      "Text": "Dear diary I want to go on a vacation",
+      "id": 5
+    },
+    {
+      "FirstName": "Dwayna",
+      "LastName": "Harris",
+      "Text": "Dear diary I went to a really pretty restaurant today",
+      "id": 6
+    }
+  ]
 }
