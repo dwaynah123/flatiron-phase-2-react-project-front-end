@@ -1,24 +1,26 @@
 //Form for the posts of journal entries
 import React, { useState, useEffect } from "react";
 
-function Posts() {
+function Post() {
   const [firstName, setFirstName] = useState("first name");
   const [lastName, setLastName] = useState("last name");
   const [text, setText] = useState("Dear diary...");
   const [submittedData, setSubmittedData] = useState([]);
 
   useEffect(() => {
-    const fetchPosts = async() => {
+    const fetchPost = async () => {
       const url = "http://localhost:4000/Posts";
-      try {
+      try{
         const response = await fetch(url);
         const jsonData = await response.json();
         console.log(jsonData);
         return jsonData;
       } catch(error){
-
+        console.error("Error occured", error);
+        return null;
       }
     }
+    fetchPost();
   }, []);
 
   function handleFirstNameChange(event) {
@@ -68,4 +70,4 @@ function Posts() {
   );
 }
 
-export default Posts;
+export default Post;
