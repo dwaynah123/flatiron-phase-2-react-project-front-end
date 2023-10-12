@@ -1,27 +1,29 @@
 //Form for the posts of journal entries
 import React, { useState, useEffect } from "react";
 
-function Post() {
+function Posts() {
   const [firstName, setFirstName] = useState("first name");
   const [lastName, setLastName] = useState("last name");
   const [text, setText] = useState("Dear diary...");
   const [submittedData, setSubmittedData] = useState([]);
+  const [dbjson, setData] = useState([]);
 
-  useEffect(() => {
-    const fetchPost = async () => {
-      const url = "http://localhost:4000/Posts";
-      try{
-        const response = await fetch(url);
-        const jsonData = await response.json();
-        console.log(jsonData);
-        return jsonData;
-      } catch(error){
-        console.error("Error occured", error);
-        return null;
-      }
-    }
-    fetchPost();
-  }, []);
+  const getData = async() => {
+    const response = await fetch('http://localhost:4000/Posts')
+    const jsonData = await response.json();
+    setData(jsonData);
+  }
+
+  useEffect(() => {getData()}, []);
+
+  const renderedPosts = dbjson.map((info) => (
+      <div key={info.id}>
+        <br></br>
+        {info.firstName} {info.lastName} 
+        <br></br>
+        {info.text}
+      </div>
+  ))
 
   function handleFirstNameChange(event) {
     setFirstName(event.target.value);
@@ -58,16 +60,17 @@ function Post() {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form id="form" onSubmit={handleSubmit}>
         <input type="text" onChange={handleFirstNameChange} value={firstName} />
         <input type="text" onChange={handleLastNameChange} value={lastName} />
         <br></br>
         <input type="text" onChange={handleTextChange} value={text} />
         <button type="submit">Submit</button>
       </form>
+      {/* {renderedPosts} */}
       {listOfSubmissions}
     </div>
   );
 }
 
-export default Post;
+export default Posts;

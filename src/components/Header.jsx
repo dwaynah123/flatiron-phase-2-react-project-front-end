@@ -3,12 +3,12 @@ const Header = () => {
     return (
         <>
             <header>
+            <a href="#bottom"> Go to bottom</a>
                 <h1>Dear diary...</h1>
                 <nav>
                     <ul>
-                        <li> <a href="#some-id1"> Link Title 1 </a> </li>
-                        <li> <a href="#some-id2"> Link Title 2 </a> </li>
-                        <li> <a href="#some-id3"> Link Title 3 </a> </li>
+                        <li> <a href="#form"> Start Entry </a> </li>
+                        <li> <a href="./Posts"> Diary Entries </a> </li>
                     </ul>
                 </nav>
             </header>
