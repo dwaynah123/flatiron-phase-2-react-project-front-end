@@ -1,16 +1,15 @@
 import Header from './components/Header'
 import Posts from './components/Posts'
 import Footer from './components/Footer'
-import { HashRouter } from 'react-router-dom'
+import Home from './components/Home'
 
 
 function App() {
 
   return (
     <>
-      <HashRouter>
-        <Header />
-      </HashRouter>
+      <Home />
+      <Header />
       <Posts />
       <Footer />
     </>
