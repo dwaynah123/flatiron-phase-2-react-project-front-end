@@ -19,7 +19,7 @@ function Posts() {
   const renderedPosts = dbjson.map((info) => (
       <div key={info.id}>
         <br></br>
-        <p>{info.FirstName} {info.LastName} </p>
+        <p id="name">{info.FirstName} {info.LastName} </p>
         <p>{info.Text}</p>
       </div>
   ))
@@ -60,10 +60,11 @@ function Posts() {
   return (
     <div>
       <form id="form" onSubmit={handleSubmit}>
-        <input type="text" onChange={handleFirstNameChange} value={firstName} />
-        <input type="text" onChange={handleLastNameChange} value={lastName} />
+        <input id="first" type="text" onChange={handleFirstNameChange} value={firstName} />
+        <input id="last" type="text" onChange={handleLastNameChange} value={lastName} />
         <br></br>
-        <input type="text" onChange={handleTextChange} value={text} />
+        <input id="textbox" type="text" onChange={handleTextChange} value={text} />
+        <br></br>
         <button type="submit">Submit</button>
       </form>
       {renderedPosts}

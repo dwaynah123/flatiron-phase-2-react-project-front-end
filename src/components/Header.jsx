@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <>
             <header>
-                <a href="#bottom"> Go to bottom</a>
+                <a href="#footer"> Go to bottom</a>
                 <h1>Dear diary...</h1>
             </header>
         </>

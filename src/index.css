@@ -13,11 +13,12 @@ a {
     color: white;
     padding: 20px;
     font-style: italic;
+
     
 }
 header h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 45px;
 }
 form {
     text-align: left;
@@ -25,6 +26,18 @@ form {
 
 p {
     text-align: left;
+    font-size: 20px;
+}
+#first{
+    margin-right: 10px;
+}
+
+#textbox{
+    margin: 10px 0 10px 0;
+    padding-bottom: 50px;
+    width: 500px;
+    text-align: left;
+    
 }
 
 #home {
