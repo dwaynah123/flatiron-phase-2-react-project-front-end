@@ -1,1 +1,9 @@
+body {
+    background-color: rgba(157, 255, 229, 0.374);
+}
 
+#home {
+    font-size: 70px;
+    padding: 100px;
+    text-align: center;
+}
