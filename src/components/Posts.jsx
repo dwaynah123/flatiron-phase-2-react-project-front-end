@@ -8,6 +8,7 @@ function Posts() {
   const [text, setText] = useState("Dear diary...");
   const [dbjson, setData] = useState([]);
 
+  //fetches my data from db.json
   const getData = async() => {
     const response = await fetch('http://localhost:4000/Posts')
     const jsonData = await response.json();
@@ -36,6 +37,7 @@ function Posts() {
     setText(event.target.value);
   }
 
+  //posts my new entries
   function handleSubmit(event) {
     event.preventDefault();
     const formData = { FirstName: firstName, LastName: lastName, Text: text};
@@ -56,7 +58,7 @@ function Posts() {
     setLastName("");
     setText("");
   }
-
+//form users fill out
   return (
     <div>
       <form id="form" onSubmit={handleSubmit}>

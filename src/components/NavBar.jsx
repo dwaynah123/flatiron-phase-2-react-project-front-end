@@ -1,3 +1,5 @@
+//The navigation bar for the page
+//used for client side routing
 import React from "react";
 import { NavLink } from "react-router-dom";
 import '../index.css';

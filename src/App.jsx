@@ -6,7 +6,8 @@ import Footer from './components/Footer'
 import Home from './components/Home'
 import NavBar from "./components/NavBar"
 
-
+//seperate components to different routes
+//Home route and posts route
 function App() {
   return (
     <>
