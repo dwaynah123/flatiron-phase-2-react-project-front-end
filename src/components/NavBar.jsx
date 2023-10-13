@@ -1,12 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import '../index.css';
 
 function NavBar() {
     return (
-        <nav>
-            <NavLink to="/">Home</NavLink>
+        <nav id="navbar">
+            <NavLink id="navA" to="/">Home</NavLink>
             
-            <NavLink to="/posts"> Post </NavLink>
+            <NavLink id="navB" to="/posts">Post</NavLink>
         </nav>
     );
 }
