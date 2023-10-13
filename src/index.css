@@ -1,29 +1,45 @@
 body {
     background-color: rgba(157, 255, 229, 0.483);
     background-image: linear-gradient(60deg,rgb(157, 255, 229), rgb(0, 187, 255),rgb(0, 140, 255));
-    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    background-size: cover;
     font-family: "Garamond", serif;
     margin-bottom: 80px;
+    text-align: right;
 }
 
-header a {
+a {
     color: white;
-    padding: 40px;
+    padding: 20px;
     font-style: italic;
     
+}
+header h1 {
+    text-align: center;
+    font-size: 40px;
+}
+form {
+    text-align: left;
+}
+
+p {
+    text-align: left;
 }
 
 #home {
     font-size: 70px;
     padding: 100px;
+    position: relative;
     text-align: center;
     color: white;
 }
 
 #navbar {
     font-size: 30px;
-    margin: 25px;
+    margin: 25px 0 25px 0;
     font-weight: bolder;
+    text-align: left;
 }
 #navA {
     padding: 20px;

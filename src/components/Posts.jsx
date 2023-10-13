@@ -19,9 +19,8 @@ function Posts() {
   const renderedPosts = dbjson.map((info) => (
       <div key={info.id}>
         <br></br>
-        {info.FirstName} {info.LastName} 
-        <br></br>
-        {info.Text}
+        <p>{info.FirstName} {info.LastName} </p>
+        <p>{info.Text}</p>
       </div>
   ))
 
