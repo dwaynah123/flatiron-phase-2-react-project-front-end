@@ -20,7 +20,7 @@ function Posts() {
       <div key={info.id}>
         <br></br>
         <p id="name">{info.FirstName} {info.LastName} </p>
-        <p>{info.Text}</p>
+        <p id="diary">{info.Text}</p>
       </div>
   ))
 

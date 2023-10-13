@@ -5,39 +5,54 @@ body {
     height: 100%;
     background-size: cover;
     font-family: "Garamond", serif;
-    margin-bottom: 80px;
+    margin-bottom: 65px;
     text-align: right;
 }
 
 a {
     color: white;
-    padding: 20px;
-    font-style: italic;
-
-    
+    font-style: oblique;
+    padding-right: 10px;   
 }
-header h1 {
+header {
     text-align: center;
-    font-size: 45px;
+    font-size: 25px;
+    font-style: oblique;
 }
 form {
-    text-align: left;
+    text-align: center;
+    margin-right: 10px;
 }
 
 p {
     text-align: left;
     font-size: 20px;
+    line-height: 22px;
+    margin-left: 40px;
 }
+
+#name{
+    font-weight: bold;
+}
+#diary{
+    font-style: oblique;
+}
+
 #first{
     margin-right: 10px;
+    font-style: italic;
+}
+
+#last{
+    font-style: italic;
 }
 
 #textbox{
     margin: 10px 0 10px 0;
     padding-bottom: 50px;
-    width: 500px;
+    width: 75%;
     text-align: left;
-    
+    font-style: italic;
 }
 
 #home {
@@ -51,8 +66,8 @@ p {
 #navbar {
     font-size: 30px;
     margin: 25px 0 25px 0;
-    font-weight: bolder;
     text-align: left;
+    font-weight: bolder;
 }
 #navA {
     padding: 20px;

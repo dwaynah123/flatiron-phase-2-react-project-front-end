@@ -3,9 +3,7 @@ const Footer = () => {
     return (
         <>
             <footer id="footer">
-                <nav>
                     <a href="#top"> Go to top </a>
-                </nav>
             </footer>
         </>
     )
