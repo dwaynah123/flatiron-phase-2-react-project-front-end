@@ -1,4 +1,5 @@
 //Title and Navigation section
+import '../index.css';
 
 const Header = () => {
     return (
