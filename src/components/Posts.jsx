@@ -1,5 +1,6 @@
 //Form for the posts of journal entries
 import React, { useState, useEffect } from "react";
+import '../index.css';
 
 function Posts() {
   const [firstName, setFirstName] = useState("first name");
