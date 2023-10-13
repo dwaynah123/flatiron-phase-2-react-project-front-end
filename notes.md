@@ -11,7 +11,7 @@ assignment: https://my.learn.co/courses/651/assignments/33022?module_item_id=834
         * Header
         * Posts
         * Footer
-- [ ] - 2 client side routes
+- [X] - 2 client side routes
 - [ ] - 30+ commits
 - [X] - Use a json-server to create a RESTful API for your backend and make both a GET and a POST request to the json server. Use a 
         form to make your post request, specifically a controlled form/component. 
